@@ -36,4 +36,7 @@ class TestAbs(unittest.TestCase):
         time.sleep(5)
         browser.quit()
 if __name__ == "__main__":
-    unittest.main()
+    try:
+        unittest.main()
+    finally:
+        browser.quit()
